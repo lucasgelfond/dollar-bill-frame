@@ -1,7 +1,7 @@
 dollar-bill-frame
 =================
 
-This is my Parametric, OpenSCAD, Open Source (CC BY-SA 4.0), bill frame.
+This is my Parametric, OpenSCAD, Open Source (GPL v3), bill frame.
 
 I recently finished making my first $100 so I decided to make a dollar bill frame to 3D print to hang on my wall. I'm still in alpha stages but I will be uploading the code for OpenSCAD soon. 
 
