@@ -9,7 +9,7 @@ I will be uploading four versions of the code as well as four different STLs:
 
 Expert - Comments galore with variables and modules put into sections and sub-sections as organized by comments. Includes unit personalization so one can use other units other than mm (inches, centimeters, etc). Also includes feature to let the user customize the pronunciation of the frame shaping, customize the slit for the paperclip and more.
   
-Deluxe - Comments explaining the variables, but no sectionining or comments on the modules. Still the same special features as Version A.
+Deluxe - Comments explaining the variables, but no sectionining or comments on the modules. Still the same special features as Expert.
 
 Full - Basic code with comment annotation but no modules (i.e all code is one piece). All variables still available.
 
