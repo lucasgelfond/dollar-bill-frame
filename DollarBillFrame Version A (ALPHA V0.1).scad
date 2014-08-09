@@ -19,7 +19,7 @@
 				framethick = 5;
 			
 			//Bottom Thickness
-				botthick = 5 ;
+				botthick = 2 ;
 
 		//----Frame Specifics----\\
 
@@ -43,7 +43,7 @@
 		slitheight = 7.5;
 
 		//Where the slit is. Slit is in the middle by default but depending on size you may have to raise or lower this value.
-		slitlift = -8.5;
+		slitlift =-4;
 
 		//Shape of slit in sides. Default is 3 (triangle) as its overhangs are not unbearable.
 		slitshape=3;
@@ -52,8 +52,16 @@
 		slitscalex= 0.25;
 		slitscaley= 1;
 		slitscalez= 1;
+	
+	//----Hook sizing----\\
+		//Hook size
+		hooksize=15;
 
+		//Hook hole size
+		hookhole=3;
 
+		//Hook thickness
+		hookthick=2.5;
 
 //-------------------Modules-------------------\\ 
 
@@ -138,7 +146,22 @@
 		}				
 	}
 
-
+		
+	module hook() {
+		translate([0,-((billwidth+xframe)/2)*unit, (-(framethick+botthick)/2)*unit ]) {
+			difference() {
+				scale([1,2,1]) {
+					cylinder(r=(hooksize/2)*unit, h=hookthick*unit, $fn=sfn);
+				}
+				translate([(-hooksize/2)*unit, 0]) {
+					cube([hooksize*unit, hooksize*unit, hookthick*unit]);
+				}
+				translate([0, (-hooksize/2)*unit, 0]) {
+					cylinder(r=(hookhole/2)*unit, h=hookthick*unit, $fn=sfn);
+				}
+			}
+		}
+	}
 
 
 	//Plating module
@@ -156,3 +179,4 @@
 	}
 
 frame();
+hook();
