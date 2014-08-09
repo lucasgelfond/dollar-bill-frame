@@ -19,7 +19,7 @@
 				framethick = 5;
 			
 			//Bottom Thickness
-				botthick = 1 ;
+				botthick = 2 ;
 
 		//----Frame Specifics----\\
 
@@ -30,10 +30,10 @@
 				yframe = 5;
 		
 			//How prominent the frame shaping is. Play with this value. Default is 2.
-				frameshapethick = 1.25;
+				frameshapethick = 1.6;
 
 			//How raised the frame shaping is. Play with this value as well. 
-				frameshaperaise = 1;
+				frameshaperaise = 0;
 		
 	//----Paper clip slit size----\\\
 		//Width of the paperclip slit. Adjust this value if as you want. 
@@ -43,7 +43,7 @@
 		slitheight = 7.5;
 
 		//Where the slit is. Slit is in the middle by default but depending on size you may have to raise or lower this value.
-		slitlift =-3;
+		slitlift =-4;
 
 		//Shape of slit in sides. Default is 3 (triangle) as its overhangs are not unbearable.
 		slitshape=3;
