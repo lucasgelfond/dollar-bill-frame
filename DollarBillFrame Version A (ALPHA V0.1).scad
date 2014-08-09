@@ -1,7 +1,7 @@
 //------------------Variables------------------\\ 
 
 		//----Global Values----\\
-			//The default unit in OpenSCAD is mm and this unit variable allows one to change the variables in the code with units other than mm. Default is 1, for mm, but cm is 10 and inches is 25.4.
+			//The default unit in OpenSCAD is mm and this unit variable allows one to change the variables in the code with units other than mm. Default is 1, for mm, but cm is 10 and inches is 25.4. Note that this entails that you change EVERY variable (except maybe sfn)  so that one piece of the model is not ridiculously bigger/smaller than the other parts. 
 				unit=1;
 
 			//The detail in the cylinders/spheres of the shape.
