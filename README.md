@@ -19,7 +19,7 @@ Lite - Basic code with no modules, no unit change, no frame shape pronunciation,
 I have just uploaded a V0.1 Alpha of Expert. I have to test this before I make the other. Note that there is no hook yet.  
 
 On my todo list:
-  Add a hook to the top of the frame (to attach with a pushpin to a bulletin board) 
+  Add holes to the corners of the model to allow for attaching a bottom plate instead of adding a bottom (this would nullify the moving tubes problem if it worked)
   Make different versions
   Upload to Google Drive
   Test with OpenJSCAD
