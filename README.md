@@ -7,24 +7,25 @@ I recently finished making my first $100 so I decided to make a dollar bill fram
 
 I will be uploading four versions of the code as well as four different STLs:
 
-Version 1 - Comments galore with variables and modules put into sections and sub-sections as organized by comments. Includes unit personalization so one can use other units other than mm (inches, centimeters, etc). Also includes feature to let the user customize the pronunciation of the frame shaping.
+Version A - Comments galore with variables and modules put into sections and sub-sections as organized by comments. Includes unit personalization so one can use other units other than mm (inches, centimeters, etc). Also includes feature to let the user customize the pronunciation of the frame shaping, customize the slit for the paperclip and more.
   
-Version 2 - Comments explaining the variables, but no sectionining. Still the same special features as Version 1.
+Version B - Comments explaining the variables, but no sectionining. Still the same special features as Version A.
 
-Version 3 - Basic code with comment annotation but no modules (i.e all code is one piece). All variables still available.
+Version C - Basic code with comment annotation but no modules (i.e all code is one piece). All variables still available.
 
-Version 4 - Basic code with no modules, no unit change, no frame shape pronunciation and no comments. 
+Version D - Basic code with no modules, no unit change, no frame shape pronunciation, no custom slits and no comments. 
 
 
-On my todo list (in order):
+I have just uploaded a V0.1 Alpha of Version A. ABC and D names will be changed in the near future! 
+
+On my todo list:
   Add a hook to the top of the frame
   Make different versions
   Upload to Google Drive
   Test with OpenJSCAD
   Name different versions (i.e, full, partial, etc.)
   Publish to github
-  
-Here is a sneak peak at the model: http://i.imgur.com/ZGUUU1h.png?1
+  Fix moving of tubes problem
 
 Until the next edit,
 Lucas
