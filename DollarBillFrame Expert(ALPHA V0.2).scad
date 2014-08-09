@@ -19,7 +19,7 @@
 				framethick = 5;
 			
 			//Bottom Thickness
-				botthick = 2 ;
+				botthick = 1 ;
 
 		//----Frame Specifics----\\
 
@@ -43,7 +43,7 @@
 		slitheight = 7.5;
 
 		//Where the slit is. Slit is in the middle by default but depending on size you may have to raise or lower this value.
-		slitlift =-4;
+		slitlift =-3;
 
 		//Shape of slit in sides. Default is 3 (triangle) as its overhangs are not unbearable.
 		slitshape=3;
