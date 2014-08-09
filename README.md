@@ -7,27 +7,26 @@ I recently finished making my first $100 so I decided to make a dollar bill fram
 
 I will be uploading four versions of the code as well as four different STLs:
 
-Version A - Comments galore with variables and modules put into sections and sub-sections as organized by comments. Includes unit personalization so one can use other units other than mm (inches, centimeters, etc). Also includes feature to let the user customize the pronunciation of the frame shaping, customize the slit for the paperclip and more.
+Expert - Comments galore with variables and modules put into sections and sub-sections as organized by comments. Includes unit personalization so one can use other units other than mm (inches, centimeters, etc). Also includes feature to let the user customize the pronunciation of the frame shaping, customize the slit for the paperclip and more.
   
-Version B - Comments explaining the variables, but no sectionining. Still the same special features as Version A.
+Deluxe - Comments explaining the variables, but no sectionining or comments on the modules. Still the same special features as Version A.
 
-Version C - Basic code with comment annotation but no modules (i.e all code is one piece). All variables still available.
+Full - Basic code with comment annotation but no modules (i.e all code is one piece). All variables still available.
 
-Version D - Basic code with no modules, no unit change, no frame shape pronunciation, no custom slits and no comments. 
+Lite - Basic code with no modules, no unit change, no frame shape pronunciation, no custom slits and no comments. 
 
 
-I have just uploaded a V0.1 Alpha of Version A. ABC and D names will be changed in the near future! 
+I have just uploaded a V0.1 Alpha of Expert. I have to test this before I make the other. Note that there is no hook yet.  
 
 On my todo list:
-  Add a hook to the top of the frame
+  Add a hook to the top of the frame (to attach with a pushpin to a bulletin board) 
   Make different versions
   Upload to Google Drive
   Test with OpenJSCAD
-  Name different versions (i.e, full, partial, etc.)
-  Publish to github
   Fix moving of tubes problem
 
 Until the next edit,
+
 Lucas
   
 
