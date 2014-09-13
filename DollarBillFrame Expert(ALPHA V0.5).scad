@@ -43,7 +43,7 @@
 		slitheight = 10;
 
 		//Where the slit is. Slit is in the middle by default but depending on size you may have to raise or lower this value.
-		slitlift =-4;
+		slitlift =-1.5;
 
 		//Shape of slit in sides. Default is 3 (triangle) as its overhangs are not unbearable.
 		slitshape=3;
