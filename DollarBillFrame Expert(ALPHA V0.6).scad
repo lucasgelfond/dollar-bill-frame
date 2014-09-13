@@ -30,7 +30,7 @@
 				yframe = 5;
 		
 			//How prominent the frame shaping is. Play with this value. Default is 2.
-				frameshapethick = 1;
+				frameshapethick = 1.1;
 
 			//How raised the frame shaping is. Play with this value as well. 
 				frameshaperaise = 0;
@@ -43,7 +43,7 @@
 		slitheight = 10;
 
 		//Where the slit is. Slit is in the middle by default but depending on size you may have to raise or lower this value.
-		slitlift =-1.5;
+		slitlift =-1.8;
 
 		//Shape of slit in sides. Default is 3 (triangle) as its overhangs are not unbearable.
 		slitshape=3;
