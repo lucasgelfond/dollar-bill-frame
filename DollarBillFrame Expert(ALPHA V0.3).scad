@@ -50,7 +50,7 @@
 
 		//Slit scale (x,y,z)
 		slitscalex= 0.5;
-		slitscaley= 1;
+		slitscaley= 1.5;
 		slitscalez= 1;
 	
 	//----Hook sizing----\\
