@@ -167,7 +167,10 @@
 	//Plating module
 	module frame() {
 		difference() {
-			outsideframe();
+			union(){
+				outsideframe();
+				hook();
+			}
 			translate([0,0, botthick]) {
 				bill();
 				clipslit();
@@ -179,4 +182,3 @@
 	}
 
 frame();
-hook();
