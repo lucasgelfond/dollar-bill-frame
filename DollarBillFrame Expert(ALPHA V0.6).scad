@@ -30,7 +30,7 @@
 				yframe = 5;
 		
 			//How prominent the frame shaping is. Play with this value. Default is 2.
-				frameshapethick = 1.6;
+				frameshapethick = 1;
 
 			//How raised the frame shaping is. Play with this value as well. 
 				frameshaperaise = 0;
