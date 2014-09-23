@@ -29,7 +29,7 @@
 			//The border of the frame width-wise. This is the measurement from the inside of the frame to the outisde on the width (y) axis.
 				yframe = 5;
 		
-			//How prominent the frame shaping is. Play with this value. Default is 2.
+			//How prominent the frame shaping is. Play with this value. Default is 1.1.
 				frameshapethick = 1.1;
 
 			//How raised the frame shaping is. Play with this value as well. 
@@ -37,9 +37,9 @@
 
 
 	//----Bill holder----\\
-	billholdx=5;
-	billholdz=2;
-	billholdlift=1;
+	billholdx=5*unit;
+	billholdz=1*unit;
+	billholdlift=2.5*unit;
 	
 	//----Hook sizing----\\
 		//Hook size
