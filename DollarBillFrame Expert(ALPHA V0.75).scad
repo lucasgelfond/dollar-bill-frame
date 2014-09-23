@@ -34,24 +34,12 @@
 
 			//How raised the frame shaping is. Play with this value as well. 
 				frameshaperaise = 0;
-		
-	//----Paper clip slit size----\\\
-		//Width of the paperclip slit. Adjust this value if as you want. 
-		slitwidth = 10;
-		
-		//Height of the slit. This is actually a size control but it mainly changes the size.
-		slitheight = 10;
 
-		//Where the slit is. Slit is in the middle by default but depending on size you may have to raise or lower this value.
-		slitlift =-1.8;
 
-		//Shape of slit in sides. Default is 3 (triangle) as its overhangs are not unbearable.
-		slitshape=3;
-
-		//Slit scale (x,y,z)
-		slitscalex= 0.5;
-		slitscaley= 1.5;
-		slitscalez= 1;
+	//----Bill holder----\\
+	billholdx=5;
+	billholdz=2;
+	billholdlift=1;
 	
 	//----Hook sizing----\\
 		//Hook size
@@ -114,38 +102,46 @@
 
 
 
-	//A slit on every side for a paper clip to hold it down
-	module clipslit() {
-		translate([0, ((billwidth+yframe)/2)*unit, slitlift*unit]) {
-			rotate([0,270,90]) {
-				scale([slitscalex,slitscaley,slitscalez]) {
-					cylinder(r=(slitheight/2)*unit, h=slitwidth*unit, $fn=slitshape, center=true);
-				}
+
+
+
+module billhold(){
+	translate([billength/2-billholdx/1.375, billwidth/2-billholdx/1.375, billholdlift]) {
+		rotate([0,0,45]) {
+			scale([1,1.75,1]){
+				cylinder($fn=3, r=billholdx, h=billholdz);
 			}
 		}
-		translate([0, ((billwidth+yframe)/2)*-unit, slitlift*unit]) {
-			rotate([0,270,90]) {
-				scale([slitscalex,slitscaley,slitscalez]) {
-					cylinder(r=(slitheight/2)*unit, h=slitwidth*unit, $fn=slitshape, center=true);
-				}
-			}
-		}
-		translate([((billength+xframe)/2)*unit, 0, slitlift*unit]) {
-			rotate([0,270,0]) {
-				scale([slitscalex,slitscaley,slitscalez]) {
-					cylinder(r=(slitheight/2)*unit, h=slitwidth*unit, $fn=slitshape, center=true);
-				}
-			}
-		}
-		translate([-unit*((billength+xframe)/2), 0, slitlift*unit]) {
-			rotate([0,270,0]) {
-				scale([slitscalex,slitscaley,slitscalez]) {
-					cylinder(r=(slitheight/2)*unit, h=slitwidth*unit, $fn=slitshape, center=true);
-				}
-			}
-		}				
 	}
 
+	translate([-billength/2+billholdx/1.375, billwidth/2-billholdx/1.375, billholdlift]) {
+		rotate([0,0,135]) {
+			scale([1,1.75,1]){
+				cylinder($fn=3, r=billholdx, h=billholdz);
+			}
+		}
+	}
+	translate([-billength/2+billholdx/1.375, -billwidth/2+billholdx/1.375, billholdlift]) {
+		rotate([0,0,225]) {
+			scale([1,1.75,1]){
+				cylinder($fn=3, r=billholdx, h=billholdz);
+			}
+		}
+	}
+
+	translate([billength/2-billholdx/1.375, -billwidth/2+billholdx/1.375, billholdlift]) {
+		rotate([0,0,315]) {
+			scale([1,1.75,1]){
+				cylinder($fn=3, r=billholdx, h=billholdz);
+			}
+		}
+	}
+
+
+
+
+
+}
 		
 	module hook() {
 		translate([0,-((billwidth+xframe)/2)*unit, (-(framethick+botthick)/2)*unit ]) {
@@ -165,7 +161,7 @@
 
 
 	//Plating module
-	module frame() {
+	module frame1() {
 		difference() {
 			union(){
 				outsideframe();
@@ -173,12 +169,17 @@
 			}
 			translate([0,0, botthick]) {
 				bill();
-				clipslit();
 			}
 			translate([0,0, frameshaperaise]) {
 				frameshaping();
 			}
+			
 		}
 	}
+
+	module frame(){
+	frame1();
+	billhold();
+}
 
 frame();
