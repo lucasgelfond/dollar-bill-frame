@@ -5,6 +5,8 @@ This is my Parametric, OpenSCAD, Open Source (GPL v3), bill frame. Note I'm not 
 
 I recently finished making my first $100 so I decided to make a dollar bill frame to 3D print to hang on my wall. I'm still in alpha stages but I will be uploading the code for OpenSCAD soon. 
 
+Oh and did I mention I'm 13?
+
 I will be uploading four versions of the code as well as four different STLs:
 
 Expert - Comments galore with variables and modules put into sections and sub-sections as organized by comments. Includes unit personalization so one can use other units other than mm (inches, centimeters, etc). Also includes feature to let the user customize the pronunciation of the frame shaping, customize the slit for the paperclip and more.
@@ -15,19 +17,9 @@ Full - Basic code with comment annotation but no modules (i.e all code is one pi
 
 Lite - Basic code with no modules, no unit change, no frame shape pronunciation, no custom slits and no comments. 
 
+Most everything is done now. I'll be printing V0.8 soon and after that all that's left is to get someone to look over it to change some of the "play with this" type variables. After that, I'll make the different versions of the code.
 
-I have just uploaded a V0.1 Alpha of Expert. I have to test this before I make the other. Note that there is no hook yet.  
-
-On my todo list:
-  Add holes to the corners of the model to allow for attaching a bottom plate instead of adding a bottom (this would nullify the moving tubes problem if it worked)
-  Make different versions
-  Upload to Google Drive
-  Test with OpenJSCAD
-  Fix moving of tubes problem
-  Check the license issue. 
-
-Until the next edit,
-
+Until next time,
 Lucas
   
 
