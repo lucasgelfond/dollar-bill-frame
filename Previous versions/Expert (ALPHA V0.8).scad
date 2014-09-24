@@ -5,7 +5,7 @@
 				unit=1;
 
 			//The detail in the cylinders/spheres of the shape.
-				sfn=30;
+				sfn=100;
 
 		//----Bill Specifics----\\
 
@@ -106,7 +106,7 @@
 
 
 module billhold(){
-	translate([billength/2-billholdx/1.375, billwidth/2-billholdx/1.375, billholdlift]) {
+	translate([billength/2-billholdx/1.375+0.25, billwidth/2-billholdx/1.375+0.25, billholdlift]) {
 		rotate([0,0,45]) {
 			scale([1,1.75,1]){
 				cylinder($fn=3, r=billholdx, h=billholdz);
@@ -114,14 +114,14 @@ module billhold(){
 		}
 	}
 
-	translate([-billength/2+billholdx/1.375, billwidth/2-billholdx/1.375, billholdlift]) {
+	translate([-billength/2+billholdx/1.375-0.25, billwidth/2-billholdx/1.375+0.25, billholdlift]) {
 		rotate([0,0,135]) {
 			scale([1,1.75,1]){
 				cylinder($fn=3, r=billholdx, h=billholdz);
 			}
 		}
 	}
-	translate([-billength/2+billholdx/1.375, -billwidth/2+billholdx/1.375, billholdlift]) {
+	translate([-billength/2+billholdx/1.375-0.25, -billwidth/2+billholdx/1.375-0.25, billholdlift]) {
 		rotate([0,0,225]) {
 			scale([1,1.75,1]){
 				cylinder($fn=3, r=billholdx, h=billholdz);
@@ -129,7 +129,7 @@ module billhold(){
 		}
 	}
 
-	translate([billength/2-billholdx/1.375, -billwidth/2+billholdx/1.375, billholdlift]) {
+	translate([billength/2-billholdx/1.375+0.25, -billwidth/2+billholdx/1.375-0.25, billholdlift]) {
 		rotate([0,0,315]) {
 			scale([1,1.75,1]){
 				cylinder($fn=3, r=billholdx, h=billholdz);
