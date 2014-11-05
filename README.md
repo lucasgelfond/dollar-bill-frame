@@ -17,7 +17,10 @@ Full - Basic code with comment annotation but no modules (i.e all code is one pi
 
 Lite - Basic code with no modules, no unit change, no frame shape pronunciation, no custom slits and no comments. 
 
-Most everything is done now. I'll be printing V0.8 soon and after that all that's left is to get someone to look over it to change some of the "play with this" type variables. After that, I'll make the different versions of the code.
+Most everything is done now. I'm keeping this beta because there are a couple things that I need to fix:
+Fully Parametricize - there are a lot of variables that just say "play with this" and should have a formula instead.
+Shaping - The shape of the frame is not very good. I want to model a better looking frame. 
+Versioning - Since I'm still in development, I haven't had time to make stepdown versions apart from Expert. I'll work on this. 
 
 Until next time,
 Lucas
