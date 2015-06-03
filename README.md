@@ -5,8 +5,6 @@ This is my Parametric, OpenSCAD, Open Source (GPL v3), bill frame. Note I'm not 
 
 I recently finished making my first $100 so I decided to make a dollar bill frame to 3D print to hang on my wall. I'm still in alpha stages but I will be uploading the code for OpenSCAD soon. 
 
-Oh and did I mention I'm 13?
-
 I will be uploading four versions of the code as well as four different STLs:
 
 Expert - Comments galore with variables and modules put into sections and sub-sections as organized by comments. Includes unit personalization so one can use other units other than mm (inches, centimeters, etc). Also includes feature to let the user customize the pronunciation of the frame shaping, customize the slit for the paperclip and more.
