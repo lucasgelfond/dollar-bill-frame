@@ -18,7 +18,7 @@ frameThickY = 5;
 frameShapeStyle = 1;
 
 //The additional thickness of the frame (top to bottom-wise), independent from the bottom and the slot for the bill.
-frameThick = 3;
+frameThick = 1;
 
 //The thickness of the bottom piece of the frame.
 botThick = 2.5;
@@ -155,7 +155,7 @@ module shapedFrame() {
 
 module hook() {
     //Moving the hook to the edge of the frame.
-    translate([0,(billWidth+frameThickY)/2,0]) {
+    translate([0,(billWidth+frameThickY)/2,(billThick+botThick+frameThick-hookThick)/-2]) {
         //Only using half of the hook by cutting off half of it. 
         difference() {
             //Scaling the cylinder up based on the ratio between length and width.
