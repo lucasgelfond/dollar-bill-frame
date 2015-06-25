@@ -1,7 +1,8 @@
 //The length of the bill (mm). Don't use exact measurements as, chances are, the thing won't print precisely enough and the bill won't fit, so do round up.
 billLength = 162;
 
-//The width of the bill (mm). Don't use exact measurements as, chances are, the thing won't print precisely enough and the bill won't fit, so do round up.
+//l (mm). Don't use exact measurements as, chances are, the thing won't print precisely enough 
+//The width of the biland the bill won't fit, so do round up.
 billWidth = 70;
 
 //The thickness of the bill. This SHOULD NOT be an exact measurement and you're completely fine using more space (within reason).
