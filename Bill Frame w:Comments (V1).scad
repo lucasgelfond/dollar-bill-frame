@@ -50,7 +50,7 @@ hookHole = 3;
 hookHoleUp = 0;
 
 //The detail on all circular objects in the model.
-sfn = 45;
+sfn = 100;
 
 //The amount extra to cut through things. Used many times here.
 extraCut = 1;
